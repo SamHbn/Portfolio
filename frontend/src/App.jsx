@@ -8,7 +8,7 @@ import Error from './pages/Error';
 
 function App() {
   return (
-    <Router basename="/Portfolio">
+    <Router>
       <Routes>
         <Route element={<MainLayout />}>
           <Route index element={<Home />} />

@@ -12,7 +12,7 @@ function Banner() {
     <section className="banner">
       <div className="banner__content">
         <h1>Bienvenue sur le portfolio de Samuel</h1>
-        <p>Développeur front-end passionné par React et le design web.</p>
+        <p>Développeur full-stack passionné par React et le design web.</p>
         <button className="banner__btn" onClick={handleScrollToProjects}>
           Voir mes projets
         </button>
