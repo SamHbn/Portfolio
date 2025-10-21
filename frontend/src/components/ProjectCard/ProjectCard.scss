@@ -1,0 +1,73 @@
+@import '../../styles/variables';
+
+.project-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  }
+
+  &__img {
+    width: 100%;
+    height: 220px;
+    border-radius: 0.75rem 0.75rem 0 0;
+    object-fit: cover; // couvre le conteneur
+    object-position: top; // afficher le haut de l'image
+    display: block;
+    filter: brightness(0.95); // légère teinte pour mieux séparer du fond
+    transition: filter 0.3s ease;
+
+    &:hover {
+      filter: brightness(1); // un petit effet au survol
+    }
+  }
+
+  &__content {
+    padding: 1.2rem;
+    text-align: center;
+
+    h3 {
+      color: $color-secondary;
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: $color-text;
+      margin-bottom: 0.75rem;
+    }
+
+    .project-card__tags {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+
+      li {
+        list-style: none;
+        background-color: none;
+        color: $color-secondary;
+        border-radius: 2rem;
+        padding: 0.5rem;
+        font-size: 1.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.2s ease;
+
+        &:hover {
+          background-color: $color-primary;
+        }
+      }
+    }
+  }
+}
