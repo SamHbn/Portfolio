@@ -14,7 +14,7 @@ function Footer() {
           <Mail size={24} />
         </a>
         <a
-          href="https://www.linkedin.com/in/tonprofil"
+          href="https://www.linkedin.com/in/samuel-herbin-70a7a6345/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
