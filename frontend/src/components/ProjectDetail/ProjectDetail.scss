@@ -46,7 +46,7 @@
       }
     }
 
-    // 🔗 Bouton GitHub
+    // Bouton GitHub
     .project-detail__github {
       display: inline-flex;
       align-items: center;
@@ -75,7 +75,7 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1032px) {
     flex-direction: column;
     text-align: center;
 
@@ -83,6 +83,7 @@
       width: 100%;
     }
 
+    .project-detail__icons,
     .project-detail__github {
       justify-content: center;
     }

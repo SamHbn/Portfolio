@@ -39,37 +39,34 @@ function ContactForm() {
 
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
-      <label>
-        Nom
-        <input
-          type="text"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
-      </label>
+      <label htmlFor="name">Nom</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        value={formData.name}
+        onChange={handleChange}
+        required
+      />
 
-      <label>
-        Email
-        <input
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-      </label>
+      <label htmlFor="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        value={formData.email}
+        onChange={handleChange}
+        required
+      />
 
-      <label>
-        Message
-        <textarea
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        ></textarea>
-      </label>
+      <label htmlFor="message">Message</label>
+      <textarea
+        id="message"
+        name="message"
+        value={formData.message}
+        onChange={handleChange}
+        required
+      ></textarea>
 
       <button type="submit">Envoyer</button>
 
