@@ -17,7 +17,7 @@
     position: absolute;
     inset: 0;
     z-index: 0; // tout au fond
-    background-image: url('../../assets/image_banner.jpg');
+    background-image: url('../../assets/image_banner_desktop.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,6 +81,8 @@
     p {
       font-size: 1rem;
     }
+
+    background-image: url('../../assets/image_banner_mobile.webp');
 
     .banner__content {
       padding: 1rem;
