@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import contactRouter from './routes/contact.js'; // chemin correct vers ton routeur
+import contactRouter from './routes/contact.js'; // chemin correct vers le routeur
 
 dotenv.config();
 
@@ -9,7 +9,7 @@ const app = express();
 
 // Middlewares
 app.use(cors());
-app.use(express.json()); // très important pour parser le JSON du POST
+app.use(express.json()); // parser le JSON du POST
 
 // Routes
 app.use('/api/contact', contactRouter);
