@@ -27,7 +27,12 @@ const iconMap = {
 function ProjectCard({ image, title, description, languages, link }) {
   return (
     <Link to={link} className="project-card">
-      <img src={image} alt={title} className="project-card__img" />
+      <img
+        src={image}
+        alt={title}
+        className="project-card__img"
+        loading="lazy"
+      />
       <div className="project-card__content">
         <h3>{title}</h3>
         <p>{description}</p>
