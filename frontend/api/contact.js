@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import nodemailer from 'nodemailer';
 
 // Fonction handler pour Vercel
