@@ -26,7 +26,12 @@
     transition: filter 0.3s ease;
 
     &:hover {
-      filter: brightness(1); // un petit effet au survol
+      filter: brightness(1);
+    }
+
+    @media (max-width: 768px) {
+      object-fit: contain; // garde l'image entière
+      height: auto; // laisse la hauteur s’ajuster
     }
   }
 

@@ -47,7 +47,7 @@
   button {
     align-self: center;
     width: 180px;
-    background-color: $color-primary;
+    background-color: $color-primary; // darken($color-primary, 12%);
     color: #fff;
     border: none;
     padding: 0.8rem 1.5rem;

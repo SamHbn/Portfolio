@@ -51,8 +51,8 @@
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      background-color: $color-primary;
-      color: $color-secondary;
+      background-color: $color-primary; // darken($color-primary, 12%);
+      color: #ffffff;
       text-decoration: none;
       padding: 0.6rem 1.2rem;
       border-radius: 2rem;

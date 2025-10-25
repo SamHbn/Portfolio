@@ -10,6 +10,7 @@ function Banner() {
 
   return (
     <section className="banner">
+      <div className="banner__overlay"></div>
       <div className="banner__content">
         <h1>Bienvenue sur le portfolio de Samuel</h1>
         <p>Développeur full-stack passionné par React et le design web.</p>
